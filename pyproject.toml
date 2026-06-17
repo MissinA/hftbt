@@ -1,6 +1,6 @@
 [project]
 name = "hftbt"
-version = "0.1.1.1.0"
+version = "0.1.1"
 description = "Lightweight high-frequency backtest engine for CryptoHFTData/hftbacktest-style event arrays."
 authors = [
     { name = "MissinA", email = "1421329142@qq.com" },
