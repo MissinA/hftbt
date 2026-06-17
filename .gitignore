@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.nbc
+*.nbi
+.DS_Store
+hftbt.egg-info/
+*.egg-info/
+build/
+dist/
+results/
+state/
+.env

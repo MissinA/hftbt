@@ -1,0 +1,45 @@
+[project]
+name = "hftbt"
+version = "0.1.0"
+description = "Lightweight high-frequency backtest engine for CryptoHFTData/hftbacktest-style event arrays."
+authors = [
+    { name = "MissinA", email = "1421329142@qq.com" },
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = "MIT"
+keywords = ["hft", "backtest", "market-making", "crypto", "numba"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numba>=0.61.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/MissinA/hftbt"
+Repository = "https://github.com/MissinA/hftbt"
+Issues = "https://github.com/MissinA/hftbt/issues"
+
+[project.scripts]
+hftbt = "hftbt.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hftbt", "hftbt.data"]
+
+[dependency-groups]
+dev = [
+    "twine>=6.1.0",
+]
